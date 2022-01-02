@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+:root{
+  --primary-logo: #003152;
+  --primary-blue: #002035;
+  --primary-grey: #C4C4C4;
+}
+
+*{
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+nav {
+  z-index: 10;
+}
+
+nav ul {
+  list-style: none;
+  padding: 25px;
+  margin: 0;
+}
+
+.nav li, input {
+  float: right;
+}
+
+.nav a{
+  font-size: 0.9em;
+  margin: 5px 0 0 20px;
+  display: block;
+}
+
+.logo{
+  float: left;
+  font-size: 36px;
+  color: var(--primary-logo);
+}
+
+.logo a{
+  font-weight: bold;
+  color: var(--primary-logo);
+}
+
+.logo a:hover{
+  color: var(--primary-logo);
+}
+
+.list a{
+  font-size: 20px;
+  color: var(--primary-grey);
+}
+
+.list a:hover{
+  color: var(--primary-blue);
+}
+
+.list input{
+  margin: 5px 0 0 20px;
+  border-radius: 15px;
+  background-color: var(--primary-grey);
+  border-width: 0px;
+  width: 226px;
+  height: 23px;
+  padding: 5px;
+  color: white;
+}
+
+.list input[type="text"]::placeholder {
+  /* Firefox, Chrome, Opera */ 
+  padding-left: 10px;
+  color: white;
+} 
+
+.slide-content {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: width 0.5s;
+  padding-top: 60px;
+  visibility: hidden;
+}
+
+.slide-content .close-btn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.active {
+  width: 250px;
+}
